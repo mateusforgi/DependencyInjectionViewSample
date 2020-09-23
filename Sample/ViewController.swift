@@ -7,10 +7,9 @@
 //
 
 import UIKit
-import CoreUISample
-import Feature
+import CoreUIFrameworks
+import FeatureModule
 
-import Feature
 class ViewController: UIViewController {
     
     override func viewDidLoad() {
@@ -33,10 +32,10 @@ class ViewController: UIViewController {
     
     @objc private func goToMyFeature() {
         let vc = FeatureViewController()
-        vc.setup(bundle: Bundle(for: TimelineView.self), cardViewIdentifier: String(describing: CoreUISample.TimelineView.self))
+        vc.setup(bundle: Bundle(for: TimelineView.self), cardViewIdentifier: String(describing: CoreUIFrameworks.TimelineView.self))
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 
 
-extension CoreUISample.TimelineView: Feature.TimelineViewProtocol {}
+extension CoreUIFrameworks.TimelineView: FeatureModule.TimelineViewProtocol {}

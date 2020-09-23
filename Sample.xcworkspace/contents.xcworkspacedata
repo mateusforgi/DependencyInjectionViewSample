@@ -2,10 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../CoreUISample/CoreUISample.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:../Feature/Feature.xcodeproj">
+      location = "group:Dependencies/FeatureModule/FeatureModule.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Podfile">

@@ -17,21 +17,26 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B8728DA2251AD4040009E2ED /* PBXContainerItemProxy */ = {
+		B8728E2E251AE9BE0009E2ED /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B8728D9E251AD4040009E2ED /* Feature.xcodeproj */;
+			containerPortal = B8728E2A251AE9BD0009E2ED /* CoreUIFrameworks.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = B8728D93251AD3FE0009E2ED;
-			remoteInfo = Feature;
-		};
-		B8728DC6251AD97A0009E2ED /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B8728DC2251AD97A0009E2ED /* CoreUISample.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = B8728DB7251AD9720009E2ED;
-			remoteInfo = CoreUISample;
+			remoteGlobalIDString = B8728E1F251AE9BD0009E2ED;
+			remoteInfo = CoreUIFrameworks;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B8728DD6251AE6EA0009E2ED /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4117938968AD1D9B5B105813 /* Pods-Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample.debug.xcconfig"; path = "Target Support Files/Pods-Sample/Pods-Sample.debug.xcconfig"; sourceTree = "<group>"; };
@@ -44,8 +49,7 @@
 		B8728D30251AD1410009E2ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8728D33251AD1410009E2ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B8728D35251AD1410009E2ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B8728D9E251AD4040009E2ED /* Feature.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Feature.xcodeproj; path = ../../Feature/Feature.xcodeproj; sourceTree = "<group>"; };
-		B8728DC2251AD97A0009E2ED /* CoreUISample.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CoreUISample.xcodeproj; path = ../../CoreUISample/CoreUISample.xcodeproj; sourceTree = "<group>"; };
+		B8728E2A251AE9BD0009E2ED /* CoreUIFrameworks.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CoreUIFrameworks.xcodeproj; path = Dependencies/CoreUIFrameworks/CoreUIFrameworks.xcodeproj; sourceTree = "<group>"; };
 		ED2BB35CF03B1F9C14FCE616 /* Pods-Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample.release.xcconfig"; path = "Target Support Files/Pods-Sample/Pods-Sample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,6 +76,7 @@
 		B8728D1B251AD13D0009E2ED = {
 			isa = PBXGroup;
 			children = (
+				B8728E2A251AE9BD0009E2ED /* CoreUIFrameworks.xcodeproj */,
 				B8728D82251AD3AE0009E2ED /* Dependencies */,
 				B8728D26251AD13D0009E2ED /* Sample */,
 				B8728D25251AD13D0009E2ED /* Products */,
@@ -105,24 +110,14 @@
 		B8728D82251AD3AE0009E2ED /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
-				B8728DC2251AD97A0009E2ED /* CoreUISample.xcodeproj */,
-				B8728D9E251AD4040009E2ED /* Feature.xcodeproj */,
 			);
 			path = Dependencies;
 			sourceTree = "<group>";
 		};
-		B8728D9F251AD4040009E2ED /* Products */ = {
+		B8728E2B251AE9BD0009E2ED /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B8728DA3251AD4040009E2ED /* Feature.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		B8728DC3251AD97A0009E2ED /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B8728DC7251AD97A0009E2ED /* CoreUISample.framework */,
+				B8728E2F251AE9BE0009E2ED /* CoreUIFrameworks.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -147,6 +142,7 @@
 				B8728D20251AD13D0009E2ED /* Sources */,
 				B8728D21251AD13D0009E2ED /* Frameworks */,
 				B8728D22251AD13D0009E2ED /* Resources */,
+				B8728DD6251AE6EA0009E2ED /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -185,12 +181,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = B8728DC3251AD97A0009E2ED /* Products */;
-					ProjectRef = B8728DC2251AD97A0009E2ED /* CoreUISample.xcodeproj */;
-				},
-				{
-					ProductGroup = B8728D9F251AD4040009E2ED /* Products */;
-					ProjectRef = B8728D9E251AD4040009E2ED /* Feature.xcodeproj */;
+					ProductGroup = B8728E2B251AE9BD0009E2ED /* Products */;
+					ProjectRef = B8728E2A251AE9BD0009E2ED /* CoreUIFrameworks.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -201,18 +193,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		B8728DA3251AD4040009E2ED /* Feature.framework */ = {
+		B8728E2F251AE9BE0009E2ED /* CoreUIFrameworks.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			path = Feature.framework;
-			remoteRef = B8728DA2251AD4040009E2ED /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		B8728DC7251AD97A0009E2ED /* CoreUISample.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CoreUISample.framework;
-			remoteRef = B8728DC6251AD97A0009E2ED /* PBXContainerItemProxy */;
+			path = CoreUIFrameworks.framework;
+			remoteRef = B8728E2E251AE9BE0009E2ED /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
